@@ -96,7 +96,7 @@ class SceneFlowDataset(Dataset):
             right_image = self._read_image(self.test_right_imgs[index])
             left_disp, scale = read_pfm(self.test_disps[index])
             right_disp, scale = read_pfm(self.test_disps_R[index])
-            
+
         if self.transform:
             left_image = self.transform(left_image)
             right_image = self.transform(right_image)

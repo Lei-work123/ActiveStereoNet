@@ -44,7 +44,7 @@ def read_sceneflow(filepath):
     flying_path = filepath  +  [x for x in image if x == 'frames_cleanpass'][0]
     flying_disp = filepath  +  [x for x in disp if x == 'frames_disparity'][0]
     flying_dir = flying_path + '/TRAIN/'
-    subdir = ['A','B','C']
+    subdir = ['A', 'B', 'C']
     
     for ss in subdir:
         flying = os.listdir(flying_dir + ss)
